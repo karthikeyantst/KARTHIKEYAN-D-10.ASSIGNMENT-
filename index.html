@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1496309732348-3627f3f040ee?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+          
+          
+        }
+    form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+            width: 350px;
+             width: 400px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+            color: #fff;
+            animation: fadeIn 1s ease;
+           transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<form id="registrationForm">
+    <h2>Registration Form</h2>
+
+    <label>Username:</label>
+    <input type="text" id="username" required>
+    <div id="usernameError" class="error"></div>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+    <div id="emailError" class="error"></div>
+
+    <label>Password:</label>
+    <input type="password" id="password" required>
+    <div id="passwordError" class="error"></div>
+
+    <label>Address/Message:</label>
+    <textarea id="address" rows="3" required></textarea>
+    <div id="addressError" class="error"></div>
+
+    <label>Contact Number:</label>
+    <input type="text" id="contact" required>
+    <div id="contactError" class="error"></div>
+
+    <button type="submit">Register</button>
+</form>
+
+<script src="karthi.js"></script>
+</body>
+</html>
+
+
+
+
+    
